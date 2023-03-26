@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B55EF594-8841-4AC9-AFA8-3EB39B810AC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.Win</RootNamespace>
+    <AssemblyName>TS.Win.PageCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects">
+      <HintPath>D:\mcdsf\Client\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>D:\mcdsf\Client\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>D:\mcdsf\Client\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TS.DW.Base">
+      <HintPath>D:\mcdsf\TS.DW.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.DWPUB.Contants">
+      <HintPath>D:\mcdsf\Client\TS.DWPUB.Contants.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.BaseType">
+      <HintPath>D:\mcdsf\Client\TS.Win.BaseType.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.Constants">
+      <HintPath>D:\mcdsf\Client\TS.Win.Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.GA">
+      <HintPath>D:\mcdsf\Client\TS.Win.GA.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.PERef">
+      <HintPath>D:\mcdsf\Client\TS.Win.PERef.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.StyleResource">
+      <HintPath>D:\mcdsf\Client\TS.Win.StyleResource.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.UIBase">
+      <HintPath>D:\mcdsf\Client\TS.Win.UIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.UIBase_Perm">
+      <HintPath>D:\mcdsf\Client\TS.Win.UIBase_Perm.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.Win.UIControl">
+      <HintPath>D:\mcdsf\Client\TS.Win.UIControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a.cs" />
+    <Compile Include="BT\BTVideoPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT\BTVideoPlay.Designer.cs">
+      <DependentUpon>BTVideoPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="PageCommon\Adapter\BatchModifyCells_Field.cs" />
+    <Compile Include="PageCommon\Adapter\BillCodingPage_Field.cs" />
+    <Compile Include="PageCommon\Adapter\eFieldNameType.cs" />
+    <Compile Include="PageCommon\Adapter\ItemAttribQueryPage_Criteria.cs" />
+    <Compile Include="PageCommon\Adapter\ItemAttribQueryPage_Result.cs" />
+    <Compile Include="PageCommon\Adapter\ItemWithAttributePage_Field.cs" />
+    <Compile Include="PageCommon\Adapter\ItemWithAttributePage_Result.cs" />
+    <Compile Include="PageCommon\Adapter\ItemWithBatch_Result.cs" />
+    <Compile Include="PageCommon\Adapter\ItemWithMultiUOMPage_Result.cs" />
+    <Compile Include="PageCommon\Adapter\LimitPrice_Button.cs" />
+    <Compile Include="PageCommon\Adapter\LimitPrice_Result.cs" />
+    <Compile Include="PageCommon\Adapter\PeriodRangeQueryPage_Criteria.cs" />
+    <Compile Include="PageCommon\Adapter\ShowStatusMessageHandler.cs" />
+    <Compile Include="PageCommon\Adapter\StatusMessageArgs.cs" />
+    <Compile Include="PageCommon\AttribParmChangeArgs.cs" />
+    <Compile Include="PageCommon\AutoPanel.cs" />
+    <Compile Include="PageCommon\AutoPanelItem.cs" />
+    <Compile Include="PageCommon\AutoPanelItemCollection.cs" />
+    <Compile Include="PageCommon\BatchModifyCells.cs" />
+    <Compile Include="PageCommon\BillDoorParmEdit.cs" />
+    <Compile Include="PageCommon\BillImage.cs" />
+    <Compile Include="PageCommon\BuildTreeViewCommonHelper.cs" />
+    <Compile Include="PageCommon\CommonHelper.cs" />
+    <Compile Include="PageCommon\CommonRefSource_q.cs" />
+    <Compile Include="PageCommon\ControlParmSetDefaultArgs.cs" />
+    <Compile Include="PageCommon\Controls\CirterialArgs.cs" />
+    <Compile Include="PageCommon\Controls\MaterialSellFilter.cs" />
+    <Compile Include="PageCommon\Controls\MaterialSellFilterCtrlValue.cs" />
+    <Compile Include="PageCommon\Controls\MaterialSellType.cs" />
+    <Compile Include="PageCommon\Controls\StockBillManagerFilterCtrlInfo.cs" />
+    <Compile Include="PageCommon\Controls\StockBillManagerNewFilter.cs" />
+    <Compile Include="PageCommon\Controls\TSPopupContainerWithClose.cs" />
+    <Compile Include="PageCommon\Controls\TSSplitterExt.cs" />
+    <Compile Include="PageCommon\DoorParmColumnHelper.cs" />
+    <Compile Include="PageCommon\eAccessoryBillType.cs" />
+    <Compile Include="PageCommon\ErrorFile.cs" />
+    <Compile Include="PageCommon\ErrorTxtFileLog.cs" />
+    <Compile Include="PageCommon\ExecuteProgress.cs" />
+    <Compile Include="PageCommon\Factory\AssemblyStart.cs" />
+    <Compile Include="PageCommon\frmBuyPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\frmBuyPrompt.Designer.cs">
+      <DependentUpon>frmBuyPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\frmExecuteProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\frmExecuteProgress.Designer.cs">
+      <DependentUpon>frmExecuteProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\frmItemSelect.cs" />
+    <Compile Include="PageCommon\frmLimitPriceApprovePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\frmLimitPriceApprovePassword.Designer.cs">
+      <DependentUpon>frmLimitPriceApprovePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\frmMeterialOptimizeProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\frmMeterialOptimizeProcess.Designer.cs">
+      <DependentUpon>frmMeterialOptimizeProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\frmQueryProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\frmQueryProcess.Designer.cs">
+      <DependentUpon>frmQueryProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\GetBillFieldArgs.cs" />
+    <Compile Include="PageCommon\GetPriceParm4WinCalArgs.cs" />
+    <Compile Include="PageCommon\HelperCenter\BTDownloadProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\HelperCenter\BTDownloadProcess.Designer.cs">
+      <DependentUpon>BTDownloadProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\HelperCenter\BTUploadProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\HelperCenter\BTUploadProcess.Designer.cs">
+      <DependentUpon>BTUploadProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\HelperCenter\BTVideoTutorialsUpload.cs" />
+    <Compile Include="PageCommon\HelperCenter\FileBlockStreamReaderEventArgs.cs" />
+    <Compile Include="PageCommon\HelperCenter\FileSplitStreamReader.cs" />
+    <Compile Include="PageCommon\HelperCenter\IniClass.cs" />
+    <Compile Include="PageCommon\HelperCenter\ThreadDownloadResult.cs" />
+    <Compile Include="PageCommon\HelperCenter\ThreadUploadResult.cs" />
+    <Compile Include="PageCommon\HelperCenter\TSAgentSettingHelper.cs" />
+    <Compile Include="PageCommon\HelperCenter\TSClientSettingHelper.cs" />
+    <Compile Include="PageCommon\HelperCenter\TSShockwaveFlash.cs" />
+    <Compile Include="PageCommon\HelperCenter\VideoHelper.cs" />
+    <Compile Include="PageCommon\IArgs\ExecuteReturnDataEventHandler.cs" />
+    <Compile Include="PageCommon\IArgs\GetExecuteReturnDataEventArgs.cs" />
+    <Compile Include="PageCommon\IArgs\TFFormulaDataSourceArgs.cs" />
+    <Compile Include="PageCommon\IArgs\TFFormulaDataSourceArgsEventHandler.cs" />
+    <Compile Include="PageCommon\ImagePage_d.cs" />
+    <Compile Include="PageCommon\ImportData\BDBatchPasteExcelData.cs" />
+    <Compile Include="PageCommon\ImportData\BeforePasteExcelDataHandler.cs" />
+    <Compile Include="PageCommon\ImportData\PasteExcelDataArgs.cs" />
+    <Compile Include="PageCommon\ImportData\PasteExcelObject.cs" />
+    <Compile Include="PageCommon\ImportExcel\IMImportExcelBD.cs" />
+    <Compile Include="PageCommon\InitBillCoding.cs" />
+    <Compile Include="PageCommon\ItemAttribConfig.cs" />
+    <Compile Include="PageCommon\ItemAttribQuery_q.cs" />
+    <Compile Include="PageCommon\ItemAttribRefSource_q.cs" />
+    <Compile Include="PageCommon\LimitPriceVerify.cs" />
+    <Compile Include="PageCommon\LimitPrice_q.cs" />
+    <Compile Include="PageCommon\MeterialOptimize.cs" />
+    <Compile Include="PageCommon\MTOptimize\CuttingDistribute.cs" />
+    <Compile Include="PageCommon\MTOptimize\frmMTOptimize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\MTOptimize\frmMTOptimize.Designer.cs">
+      <DependentUpon>frmMTOptimize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\MTOptimize\frmSDOptimize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\MTOptimize\frmSDOptimize.Designer.cs">
+      <DependentUpon>frmSDOptimize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\MTOptimize\OptimizeDistribute.cs" />
+    <Compile Include="PageCommon\MTOptimize\OptimizeInit.cs" />
+    <Compile Include="PageCommon\MTOptimize\OptimizeSet.cs" />
+    <Compile Include="PageCommon\MTOptimize\OptimizeSetting.cs" />
+    <Compile Include="PageCommon\MTOptimize\PerformOptimize.cs" />
+    <Compile Include="PageCommon\NewOptimize\frmOptimizeProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\NewOptimize\frmOptimizeProcess.Designer.cs">
+      <DependentUpon>frmOptimizeProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\NewOptimize\frmOptimizeProcess_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\NewOptimize\frmOptimizeProcess_New.Designer.cs">
+      <DependentUpon>frmOptimizeProcess_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\NewOptimize\OptimizeConfigNew.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeDataItem.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeDataItemCollection.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeDataNew.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeEnum.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeProcessMessageArgs.cs" />
+    <Compile Include="PageCommon\NewOptimize\OptimizeProcessMessageHandler.cs" />
+    <Compile Include="PageCommon\NewOptimize\PerformNewOptimize.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\ClientExcuteSQL.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\ClientSBProfile.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\DealWithImage.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\DividingColumnComputeRows.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\ImageCompressType.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\MessageBoxConstants.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\PermissionControl.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\SBSystemValue.cs" />
+    <Compile Include="PageCommon\PageCommonHelper\TSMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\PageCommonHelper\TSMessageBox.Designer.cs">
+      <DependentUpon>TSMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\PageCommonHelper\TSShowMessageBox.cs" />
+    <Compile Include="PageCommon\ParmLimitBillHelper.cs" />
+    <Compile Include="PageCommon\ParsePredefineDefaultValue.cs" />
+    <Compile Include="PageCommon\Presentation\ItemAttribQueryPage_Query.cs" />
+    <Compile Include="PageCommon\Presentation\QueryThreadEventArgs.cs" />
+    <Compile Include="PageCommon\Presentation\QueryThreadEventHandler.cs" />
+    <Compile Include="PageCommon\Presentation\QueryType.cs" />
+    <Compile Include="PageCommon\RAPIHelper.cs" />
+    <Compile Include="PageCommon\SearchInfoArgs.cs" />
+    <Compile Include="PageCommon\SearchType.cs" />
+    <Compile Include="PageCommon\ShowTSAutoMessageBox.cs" />
+    <Compile Include="PageCommon\ThreadResult.cs" />
+    <Compile Include="PageCommon\TSAutoMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\TSAutoMessageBox.Designer.cs">
+      <DependentUpon>TSAutoMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\TSConverter.cs" />
+    <Compile Include="PageCommon\TSPanelSwitch.cs" />
+    <Compile Include="PageCommon\TSPoint.cs" />
+    <Compile Include="PageCommon\TSPoints.cs" />
+    <Compile Include="PageCommon\TSSelectTabIndexArgs.cs" />
+    <Compile Include="PageCommon\TSSelectTabIndexHandler.cs" />
+    <Compile Include="PageCommon\TSSketch.cs" />
+    <Compile Include="PageCommon\TSSpeedQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\TSSpeedQuery.Designer.cs">
+      <DependentUpon>TSSpeedQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCommon\TSSwitch.cs" />
+    <Compile Include="PageCommon\UOMFormula.cs" />
+    <Compile Include="PageCommon\WebServiceHelper.cs" />
+    <Compile Include="PageCommon\WPProduce\ProduceHelper.cs" />
+    <Compile Include="PageCommon\WPProduce\ProduceItemInfo.cs" />
+    <Compile Include="PageCommon\WPProduce\TestProduceImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCommon\WPProduce\TestProduceImg.Designer.cs">
+      <DependentUpon>TestProduceImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WebReference\AddBuyRecordByProductCompletedEventArgs.cs" />
+    <Compile Include="WebReference\AddBuyRecordByProductCompletedEventHandler.cs" />
+    <Compile Include="WebReference\AddBuyRecordCompletedEventArgs.cs" />
+    <Compile Include="WebReference\AddBuyRecordCompletedEventHandler.cs" />
+    <Compile Include="WebReference\AddProductInfo4CompletedEventArgs.cs" />
+    <Compile Include="WebReference\AddProductInfo4CompletedEventHandler.cs" />
+    <Compile Include="WebReference\AddTSProductFunctionRegCompletedEventArgs.cs" />
+    <Compile Include="WebReference\AddTSProductFunctionRegCompletedEventHandler.cs" />
+    <Compile Include="WebReference\BuyedEncryptionCompletedEventArgs.cs" />
+    <Compile Include="WebReference\BuyedEncryptionCompletedEventHandler.cs" />
+    <Compile Include="WebReference\BuyedEncryption_DeadLineCompletedEventArgs.cs" />
+    <Compile Include="WebReference\BuyedEncryption_DeadLineCompletedEventHandler.cs" />
+    <Compile Include="WebReference\ChangeOldCompletedEventArgs.cs" />
+    <Compile Include="WebReference\ChangeOldCompletedEventHandler.cs" />
+    <Compile Include="WebReference\ChangePhoneCompletedEventArgs.cs" />
+    <Compile Include="WebReference\ChangePhoneCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckHasOrderFunctionCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckHasOrderFunctionCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckOrderFunctionCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckOrderFunctionCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckPhoneCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckPhoneCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckRegInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckRegInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckRegInfo_AgentCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckRegInfo_AgentCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckRegisterInfo4DealerCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckRegisterInfo4DealerCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckRegisterInfo4GuideCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckRegisterInfo4GuideCompletedEventHandler.cs" />
+    <Compile Include="WebReference\CheckRegisterInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\CheckRegisterInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\ExitLoginCompletedEventArgs.cs" />
+    <Compile Include="WebReference\ExitLoginCompletedEventHandler.cs" />
+    <Compile Include="WebReference\ForbidSoftWareCompletedEventArgs.cs" />
+    <Compile Include="WebReference\ForbidSoftWareCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetAgentInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetAgentInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetEncryptionTxtCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetEncryptionTxtCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetFactoryCustomerCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetFactoryCustomerCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetFactoryFunctionRegCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetFactoryFunctionRegCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetFunctionRegCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetFunctionRegCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetMobliePhoneValidateCodeCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetMobliePhoneValidateCodeCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetMTCustomerIDCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetMTCustomerIDCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetProFunListInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetProFunListInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetProReg4TableNameCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetProReg4TableNameCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetRegCodeCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetRegCodeCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetSoftWareFunlistCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetSoftWareFunlistCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetTSBuyRecordCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetTSBuyRecordCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetTSFactoryInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetTSFactoryInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetTSProductActivityCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetTSProductActivityCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetTSSoftWareTypeInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetTSSoftWareTypeInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\GetUserInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetUserInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\InsertInfo4DrawCompletedEventArgs.cs" />
+    <Compile Include="WebReference\InsertInfo4DrawCompletedEventHandler.cs" />
+    <Compile Include="WebReference\InsertTSSoftAutoUpdateLogCompletedEventArgs.cs" />
+    <Compile Include="WebReference\InsertTSSoftAutoUpdateLogCompletedEventHandler.cs" />
+    <Compile Include="WebReference\InsertTSSoftUsedLogCompletedEventArgs.cs" />
+    <Compile Include="WebReference\InsertTSSoftUsedLogCompletedEventHandler.cs" />
+    <Compile Include="WebReference\InsertTSSoftUsedLogNewCompletedEventArgs.cs" />
+    <Compile Include="WebReference\InsertTSSoftUsedLogNewCompletedEventHandler.cs" />
+    <Compile Include="WebReference\LoginCompletedEventArgs.cs" />
+    <Compile Include="WebReference\LoginCompletedEventHandler.cs" />
+    <Compile Include="WebReference\MergeFactoryCompletedEventArgs.cs" />
+    <Compile Include="WebReference\MergeFactoryCompletedEventHandler.cs" />
+    <Compile Include="WebReference\MySoapHeader.cs" />
+    <Compile Include="WebReference\OnloadBuyRecordsDataCompletedEventArgs.cs" />
+    <Compile Include="WebReference\OnloadBuyRecordsDataCompletedEventHandler.cs" />
+    <Compile Include="WebReference\PreGenEncryptionTxtCompletedEventArgs.cs" />
+    <Compile Include="WebReference\PreGenEncryptionTxtCompletedEventHandler.cs" />
+    <Compile Include="WebReference\QueryDistributorInfoByIDCompletedEventArgs.cs" />
+    <Compile Include="WebReference\QueryDistributorInfoByIDCompletedEventHandler.cs" />
+    <Compile Include="WebReference\QueryDistributorInfoCompletedEventArgs.cs" />
+    <Compile Include="WebReference\QueryDistributorInfoCompletedEventHandler.cs" />
+    <Compile Include="WebReference\QueryInfo4DrawCompletedEventArgs.cs" />
+    <Compile Include="WebReference\QueryInfo4DrawCompletedEventHandler.cs" />
+    <Compile Include="WebReference\ReadEncryptionCompletedEventArgs.cs" />
+    <Compile Include="WebReference\ReadEncryptionCompletedEventHandler.cs" />
+    <Compile Include="WebReference\RegisterCompletedEventArgs.cs" />
+    <Compile Include="WebReference\RegisterCompletedEventHandler.cs" />
+    <Compile Include="WebReference\RegisterNewUserCompletedEventArgs.cs" />
+    <Compile Include="WebReference\RegisterNewUserCompletedEventHandler.cs" />
+    <Compile Include="WebReference\SaveTSFactoryOrderStatisticsCompletedEventArgs.cs" />
+    <Compile Include="WebReference\SaveTSFactoryOrderStatisticsCompletedEventHandler.cs" />
+    <Compile Include="WebReference\TryRegister4DrawCompletedEventArgs.cs" />
+    <Compile Include="WebReference\TryRegister4DrawCompletedEventHandler.cs" />
+    <Compile Include="WebReference\TryRegister4SampleCompletedEventArgs.cs" />
+    <Compile Include="WebReference\TryRegister4SampleCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UnForbidSoftWareCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UnForbidSoftWareCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UpdateBuyRecordByProductCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UpdateBuyRecordByProductCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UpdateBuyStatusCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UpdateBuyStatusCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UpdateInfo4DrawCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UpdateInfo4DrawCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UpdateIsChangeCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UpdateIsChangeCompletedEventHandler.cs" />
+    <Compile Include="WebReference\UpdateTSUserPWCompletedEventArgs.cs" />
+    <Compile Include="WebReference\UpdateTSUserPWCompletedEventHandler.cs" />
+    <Compile Include="WebReference\VerifySoftWareIsForbidCompletedEventArgs.cs" />
+    <Compile Include="WebReference\VerifySoftWareIsForbidCompletedEventHandler.cs" />
+    <Compile Include="WebReference\WebRegister.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetAllPriceSetCompletedEventArgs.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetAllPriceSetCompletedEventHandler.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetMTSFormulaBoughtCompletedEventArgs.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetMTSFormulaBoughtCompletedEventHandler.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetScanStatusCompletedEventArgs.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetScanStatusCompletedEventHandler.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetUnUsedQtyCompletedEventArgs.cs" />
+    <Compile Include="WR_MTSFormulaManage\GetUnUsedQtyCompletedEventHandler.cs" />
+    <Compile Include="WR_MTSFormulaManage\MTSFormulaManage.cs" />
+    <Compile Include="WR_MTSFormulaManage\MySoapHeader.cs" />
+    <Compile Include="WR_MTSFormulaManage\SaveUsedQtyCompletedEventArgs.cs" />
+    <Compile Include="WR_MTSFormulaManage\SaveUsedQtyCompletedEventHandler.cs" />
+    <Compile Include="ᜀ.cs" />
+    <Compile Include="ᜁ.cs" />
+    <Compile Include="ᜂ.cs" />
+    <Compile Include="ᜃ.cs" />
+    <Compile Include="ᜄ.cs" />
+    <Compile Include="ᜅ.cs" />
+    <Compile Include="ᜆ.cs" />
+    <Compile Include="ᜇ.cs" />
+    <Compile Include="ᜈ.cs" />
+    <Compile Include="ᜉ.cs" />
+    <Compile Include="ᜊ.cs" />
+    <Compile Include="ᜋ.cs" />
+    <Compile Include="ᜌ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="a.resources" />
+    <EmbeddedResource Include="BT\BTVideoPlay.resources" />
+    <EmbeddedResource Include="PageCommon\BatchModifyCells.resources" />
+    <EmbeddedResource Include="PageCommon\Controls\MaterialSellFilter.resources" />
+    <EmbeddedResource Include="PageCommon\Controls\StockBillManagerNewFilter.resources" />
+    <EmbeddedResource Include="PageCommon\frmBuyPrompt.resources" />
+    <EmbeddedResource Include="PageCommon\frmExecuteProgress.resources" />
+    <EmbeddedResource Include="PageCommon\frmItemSelect.resources" />
+    <EmbeddedResource Include="PageCommon\frmLimitPriceApprovePassword.resources" />
+    <EmbeddedResource Include="PageCommon\frmMeterialOptimizeProcess.resources" />
+    <EmbeddedResource Include="PageCommon\frmQueryProcess.resources" />
+    <EmbeddedResource Include="PageCommon\HelperCenter\BTDownloadProcess.resources" />
+    <EmbeddedResource Include="PageCommon\HelperCenter\BTUploadProcess.resources" />
+    <EmbeddedResource Include="PageCommon\HelperCenter\TSShockwaveFlash.resources" />
+    <EmbeddedResource Include="PageCommon\ImagePage_d.resources" />
+    <EmbeddedResource Include="PageCommon\ImportData\BDBatchPasteExcelData.resources" />
+    <EmbeddedResource Include="PageCommon\MTOptimize\frmMTOptimize.resources" />
+    <EmbeddedResource Include="PageCommon\MTOptimize\frmSDOptimize.resources" />
+    <EmbeddedResource Include="PageCommon\MTOptimize\OptimizeSetting.resources" />
+    <EmbeddedResource Include="PageCommon\NewOptimize\frmOptimizeProcess.resources" />
+    <EmbeddedResource Include="PageCommon\NewOptimize\frmOptimizeProcess_New.resources" />
+    <EmbeddedResource Include="PageCommon\PageCommonHelper\TSMessageBox.resources" />
+    <EmbeddedResource Include="PageCommon\TSAutoMessageBox.resources" />
+    <EmbeddedResource Include="PageCommon\TSPanelSwitch.resources" />
+    <EmbeddedResource Include="PageCommon\TSSpeedQuery.resources" />
+    <EmbeddedResource Include="PageCommon\TSSwitch.resources" />
+    <EmbeddedResource Include="PageCommon\WPProduce\TestProduceImg.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
